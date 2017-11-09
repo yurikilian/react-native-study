@@ -21,7 +21,9 @@ const AppNavigator = StackNavigator({
   Localization: { screen: LocalizationScreen },
   Cart: { screen: CartScreen },
   ItemScanner: { screen: ItemScannerScreen }
-});
+}, {
+    headerMode: 'none'
+  });
 
 export default class App extends React.Component {
   render() {

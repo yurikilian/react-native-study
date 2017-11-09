@@ -2,19 +2,19 @@ import React from 'React';
 import {
     View,
     Text,
-    Button
+    Button, StatusBar
+
 } from 'react-native';
 
 export default class HomeScreen extends React.Component {
-    static navigationOptions = {
-        title: 'Lojas Renner - Pague Fácil',
-    };
+
 
     render() {
         const { navigate } = this.props.navigation;
 
         return (
             <View>
+                <View style={{ height: StatusBar.currentHeight, backgroundColor: 'black' }} />
                 <Text>HOME</Text>
                 <Button
                     onPress={() => navigate('Login')}
